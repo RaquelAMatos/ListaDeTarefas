@@ -1,0 +1,133 @@
+html, body {
+  height: 100%; /* altura real da viewport */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* vertical */
+  align-items: center;     /* horizontal */
+  flex-direction: column;
+  min-height: 100%;        /* ocupa toda a altura real da tela */
+
+}
+
+#topList {
+  width: 90%;
+  max-width: 25rem;
+  min-width: 200px;
+  height: auto; /* mantém altura do conteúdo */
+}
+#inicio{
+    background-color:#faebd7;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+#input{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    gap: 3px;
+    padding: 10px;
+    
+}
+h1{
+padding-left: 10px;
+padding-top: 10px;
+ color:#532e13;
+
+    
+}
+#taskInput{
+ padding: 10px;
+border: none;
+ border-radius: 5px;
+ background-color:#E6C9AA ;
+ color:#2c1402;
+  font-size: 16px;
+  
+    
+}
+#taskInput:focus {
+  outline: none; 
+  border-color: #ccc; 
+}
+#btnadd{
+    color:#1f0f0a;
+    background-color: #B88C6B;
+    border: none;
+    border-radius: 5px;
+}
+
+#taskList{
+
+    display: flex;
+    flex-direction: column;
+   
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+.elemento{
+min-width: 70%;;
+
+ display: flex;
+ justify-content: space-between;
+ padding: 8px;
+ align-items: center;
+ background-color: #F3E1C7;
+ color: #7c4b38;
+ list-style: none;
+ border-radius: 5px;
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); 
+}
+.texto{
+   margin: 5px;
+   font-size: 20px;
+   font-weight: 600;
+   overflow: hidden;
+   
+
+
+}
+.icon{
+    color:#7c4b38;
+    cursor: pointer;
+}
+#list{
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); 
+    padding: 1em;
+    
+}
+.divIcons{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+.elemento.concluida{
+    outline:  2px solid #7c4b38;
+  
+}
+#btnadd:hover {
+    background-color: #A77958; 
+    cursor: pointer;
+}
+@media (min-height: 1024px) and (max-height: 1400px) {
+  body {
+    min-height: unset;       /* remove o min-height normal */
+    height: 80%;             /* força altura menor para centralização visual */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+ 
+

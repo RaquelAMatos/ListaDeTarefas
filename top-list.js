@@ -29,7 +29,7 @@ function mostrarTarefa(tarefa){
   iconTrash.classList.add("fa-regular","fa-trash-can","icon")
   divIcons.appendChild(iconTrash)
 
-  // Evento de concluir tarefa
+
   iconCheck.addEventListener("click", (e) => {
     e.stopPropagation()
     li.classList.toggle("concluida")
